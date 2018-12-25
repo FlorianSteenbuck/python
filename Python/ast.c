@@ -413,9 +413,9 @@ set_context(struct compiling *c, expr_ty e, expr_context_ty ctx, const node *n)
                 expr_name = "()";
             }
             break;
-        case Lambda_kind:
+        /*case Lambda_kind:
             expr_name = "lambda";
-            break;
+            break;*/
         case Call_kind:
             expr_name = "function call";
             break;
@@ -427,9 +427,9 @@ set_context(struct compiling *c, expr_ty e, expr_context_ty ctx, const node *n)
         case GeneratorExp_kind:
             expr_name = "generator expression";
             break;
-        case Yield_kind:
+        /*case Yield_kind:
             expr_name = "yield expression";
-            break;
+            break;*/
         case ListComp_kind:
             expr_name = "list comprehension";
             break;
